@@ -6,4 +6,5 @@ A locally-hosted, retrieval-augmented question-answering agent, built entirely w
 How it works:
 
 vector.py — Loads reviews from realistic_restaurant_reviews.csv into pandas, generates embeddings locally using Ollama's mxbai-embed-large model, and persists them in a ChromaDB vector store (OllamaEmbeddings + Chroma from LangChain). Metadata like rating and date is preserved for each entry, and the index is only rebuilt if it doesn't already exist on disk.
+
 main.py — Sets up a LangChain retriever over the vector store, builds a prompt template that injects retrieved reviews as context, and chains it (prompt | model) to a local LLaMA3.2 model served through Ollama. Runs an interactive CLI loop where each user question triggers a similarity search, then a grounded generation step.

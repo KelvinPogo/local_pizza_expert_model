@@ -1,0 +1,1 @@
+A Python-based AI agent that runs entirely on local infrastructure using Ollama-hosted LLMs, LangChain for orchestration, and a Retrieval-Augmented Generation (RAG) pipeline for context-aware responses. Demonstrates end-to-end setup of local model inference, vector-based document retrieval, and prompt chaining — no reliance on external API keys or cloud inference.

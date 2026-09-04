@@ -1,3 +1,11 @@
 venv/
 .venv/
 *.bin
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Local vector database
+chrome_langchain_db/
+*.sqlite3
